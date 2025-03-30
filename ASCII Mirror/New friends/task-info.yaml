@@ -36,7 +36,7 @@ files:
   - name: src/test/example5.txt
     visible: true
     learner_created: true
-feedback_link: https://hyperskill.org/projects/260/stages/1318/implement#comment
+feedback_link: https://hyperskill.org/learn/step/20317#comment
 status: Solved
 feedback:
   message: Congratulations!

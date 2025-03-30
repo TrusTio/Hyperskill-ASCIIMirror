@@ -3,7 +3,7 @@ hyperskill_project:
   ide_files: https://hyperskill.org/api/projects/260/additional-files/additional_files.json
   is_template_based: false
   use_ide: true
-update_date: "Thu, 01 Jan 1970 00:00:00 UTC"
+update_date: "Sun, 30 Mar 2025 12:22:15 UTC"
 stages:
   - id: 1316
     step: 20315
@@ -16,7 +16,7 @@ stages:
     is_completed: true
   - id: 1319
     step: 20318
-    is_completed: false
+    is_completed: true
   - id: 1320
     step: 20319
     is_completed: false
@@ -66,12 +66,6 @@ topics:
       theory_id: 3746
     - title: IDE
       theory_id: 10996
-    - title: Data types and their sizes
-      theory_id: 3532
-    - title: Type casting
-      theory_id: 3510
-    - title: Calling methods
-      theory_id: 10973
     - title: Floating-point types
       theory_id: 3517
     - title: Boolean type and operations. True and false
@@ -98,6 +92,12 @@ topics:
       theory_id: 10570
     - title: Overloading
       theory_id: 3525
+    - title: Data types and their sizes
+      theory_id: 3532
+    - title: Type casting
+      theory_id: 3510
+    - title: Calling methods
+      theory_id: 10973
     - title: Primitive and reference types
       theory_id: 5035
     - title: Array
@@ -134,10 +134,10 @@ topics:
       theory_id: 16479
     - title: Defining classes
       theory_id: 3618
-    - title: Grouping classes with packages
-      theory_id: 3621
     - title: Instance methods
       theory_id: 3495
+    - title: Grouping classes with packages
+      theory_id: 3621
     - title: Initializing new instances. Constructor
       theory_id: 3535
     - title: Access modifiers
@@ -187,10 +187,10 @@ topics:
       theory_id: 3585
     - title: Object class
       theory_id: 3596
-    - title: Static members
-      theory_id: 3534
     - title: Adding annotations
       theory_id: 3622
+    - title: Static members
+      theory_id: 3534
     - title: Method overriding
       theory_id: 3572
     - title: Polymorphism

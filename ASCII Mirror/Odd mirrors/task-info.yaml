@@ -21,6 +21,9 @@ files:
   - name: test/MirrorTest.java
     visible: false
     learner_created: false
-feedback_link: https://hyperskill.org/projects/260/stages/1319/implement#comment
-status: Unchecked
-record: -1
+feedback_link: https://hyperskill.org/learn/step/20318#comment
+status: Solved
+feedback:
+  message: Congratulations!
+  time: "Sun, 30 Mar 2025 13:18:34 UTC"
+record: 4
