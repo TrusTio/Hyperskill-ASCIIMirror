@@ -22,23 +22,9 @@ files:
     visible: false
     learner_created: false
 feedback_link: https://hyperskill.org/learn/step/20319#comment
-status: Failed
+status: Solved
 feedback:
-  message: "Wrong answer in test #1\n\nWhen the user inputs a file, that can be correctly\
-    \ opened - each line in output should match the following pattern: &quot;{modified\
-    \ line} | {reversed modified line}&quot;\n\nPlease find below the output of your\
-    \ program during this failed test.\nNote that the &#39;&gt;&#39; character indicates\
-    \ the beginning of the input line.\n\n---\n\nstdout:\nInput the file path:\n&gt;\
-    \ ./test/example1.txt\n                    _______  |                     _______\
-    \ \n                   &lt; hello &gt; |                    &lt; hello &gt;\n\
-    \                    -------  |                     ------- \n            ^__^\
-    \   /         |             ^__^   /        \n    _______/(oo)  /          | \
-    \    _______/(oo)  /         \n/\\/(       /(__)             | /\\/(       /(__)\
-    \            \n   | w----||                 |    | w----||                \n \
-    \  ||     ||                 |    ||     ||\n\nstderr:\nMar 30, 2025 4:18:48 PM\
-    \ asciimirror.Main main\nINFO: File information: \n File name: example1.txt\n\
-    \ File path: .\\test\\example1.txt\n Is file: true\n Is directory: false\n Exists:\
-    \ true\n Parent path: .\\test\n Absolute path: C:\\Users\\Niffin\\IdeaProjects\\\
-    Hyperskill-ASCIIMirror\\ASCII Mirror\\task\\.\\test\\example1.txt"
-  time: "Sun, 30 Mar 2025 13:18:48 UTC"
+  message: Well done! You've finished the project. Select a new project on <a href="https://hyperskill.org/projects">Hyperskill</a>
+    to continue learning.
+  time: "Tue, 01 Apr 2025 13:37:29 UTC"
 record: 5

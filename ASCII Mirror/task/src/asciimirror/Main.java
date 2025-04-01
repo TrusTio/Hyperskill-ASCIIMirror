@@ -8,7 +8,7 @@ import java.util.Scanner;
 import java.util.logging.Logger;
 
 /**
- * Stage 4/5 completed
+ * Stage 5/5 completed
  * ASCII Mirror with Java - https://hyperskill.org/projects/260
  * Part of Hyperskill's Java Backend Developer (Spring Boot) course.
  */
@@ -38,7 +38,7 @@ public class Main {
             while (fileScanner.hasNext()) {
                 String nextLine = fileScanner.nextLine();
                 lineList.add(nextLine);
-                if(nextLine.length() > longestStringLength) {
+                if (nextLine.length() > longestStringLength) {
                     longestStringLength = nextLine.length();
                 }
             }
@@ -47,24 +47,49 @@ public class Main {
         }
 
 
-        List<String> mirroredList = mirrorList(lineList,longestStringLength);
-        for(String str : mirroredList){
+        List<String> mirroredList = mirrorList(lineList, longestStringLength);
+        for (String str : mirroredList) {
             System.out.println(str);
         }
     }
 
     /**
      * Mirrors the list given a List of String and an int of the longest string length
-     * @param lineList
-     * @param longestStringLength
-     * @return
+     *
+     * @param lineList - List<String> containing the lines that need to be mirrored
+     * @param longestStringLength - longest String line's length, used to adjust the mirroring
+     * @return mirrored ArrayList<String> containing the original lines and the mirrored ones separated by "|"
      */
-    public static List<String> mirrorList (List<String> lineList, int longestStringLength){
-        List<String> mirroredList = new ArrayList<>() ;
+    public static List<String> mirrorList(List<String> lineList, int longestStringLength) {
+        List<String> mirroredList = new ArrayList<>();
 
-        for(String str : lineList) {
-                int lengthDifference = longestStringLength - str.length();
-                mirroredList.add(str + " ".repeat(lengthDifference) + " | " + str + " ".repeat(lengthDifference));
+        for (String str : lineList) {
+            int lengthDifference = longestStringLength - str.length();
+            // adjust spaces
+            String leftSide = str + " ".repeat(lengthDifference) + " | ";
+            String rightSide = str + " ".repeat(lengthDifference);
+
+            // reverse right side
+            String reversedRightSide = new StringBuilder(rightSide).reverse().toString();
+            StringBuilder reversedSymbols = new StringBuilder();
+
+            // < to >, [ to ], { to }, ( to ), / to \, and vice versa.
+            for (char c : reversedRightSide.toCharArray()) {
+                switch (c) {
+                    case '<': c = '>'; break;
+                    case '>': c = '<'; break;
+                    case '[': c = ']'; break;
+                    case ']': c = '['; break;
+                    case '{': c = '}'; break;
+                    case '}': c = '{'; break;
+                    case '(': c = ')'; break;
+                    case ')': c = '('; break;
+                    case '/': c = '\\'; break;
+                    case '\\': c = '/'; break;
+                }
+                reversedSymbols.append(c);
+            }
+            mirroredList.add(leftSide + reversedSymbols);
         }
         return mirroredList;
     }
